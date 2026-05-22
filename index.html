@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamela's Bookstore | Home</title>
 
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Pamela's Bookstore</h1>
+        <p>The bookstore your wallet would love</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Product.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Worry less, and just find the book you love</h2>
+            <p>Welcome to our bookstore! We offer a wide range of incredible books at a very affordable price. Dive into your next favorite story without breaking the bank.</p>
+        </section>
+
+<!-- Simple Slideshow -->
+<section class="slideshow-section">
+    <div class="slideshow-box">
+        <img id="slideImage" class="slide-img" src="slide1.jpg" alt="Slideshow">
+        
+        <button class="slide-prev" onclick="prevSlide()">❮</button>
+        <button class="slide-next" onclick="nextSlide()">❯</button>
+    </div>
+    
+    <div class="slide-dots">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+</section>
+        <section class="products-section">
+            <h2>Featured Products</h2>
+
+            <div class="product">
+                <div class="book-cover">
+                    <img src="academic.jpg" alt="Academic Success Guide Book Cover" width="200" height="250">
+                </div>
+                <h3>Academic Success Guide</h3>
+                <p class="tagline">Are you a student? We've got you covered!</p>
+                <p class="price">P180 - P300</p>
+                <button class="buy-btn" onclick="addToCart('Academic Success Guide')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <div class="book-cover">
+                    <img src="childern.jpg" alt="Children's Storybook Cover" width="200" height="250">
+                </div>
+                <h3>Children's Storybook</h3>
+                <p class="tagline">Don't worry about those little ones.</p>
+                <p class="price">P150 - P200</p>
+                <button class="buy-btn" onclick="addToCart('Children\'s Storybook')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <div class="book-cover">
+                    <img src="general.jpg" alt="The Endless Mystery Book Cover" width="200" height="250">
+                </div>
+                <h3>The Endless Mystery</h3>
+                <p class="tagline">You can never get enough.</p>
+                <p class="price">P120 - P200</p>
+                <button class="buy-btn" onclick="addToCart('The Endless Mystery')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pamela's Bookstore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
